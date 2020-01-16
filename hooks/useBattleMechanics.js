@@ -9,7 +9,7 @@ function useBattleMechanics() {
     const dispatch = useDispatch()
 
     function rollDices(){
-        const rolls = Array(4).fill().map(() => Math.floor(Math.random() * 6) + 1);
+        const rolls = Array(4).fill().map(() => Math.floor(Math.random() * 6) + 1)
         dispatch(updateDices(rolls))
         calculateDamage(rolls)
     }
