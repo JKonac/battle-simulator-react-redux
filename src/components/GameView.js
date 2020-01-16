@@ -2,8 +2,8 @@ import React from "react"
 import useBattleMechanics from "../hooks/useBattleMechanics"
 import Dice from "./Dice"
 import {useSelector} from "react-redux"
-import playerImage from '../graphics/Player.png';
-import monsterImage from '../graphics/Monster.png';
+import playerImage from '../graphics/Player.png'
+import monsterImage from '../graphics/Monster.png'
 
 function GameView() {
 

@@ -37,7 +37,7 @@ export function resetSession() {
     }
 }
 
-const initialState = {
+export const initialState = {
     message: "The battle has begun!",
     playerHP: 100,
     monsterHP: 100,
@@ -45,7 +45,7 @@ const initialState = {
     winner: "",
 }
 
-function reducer(state = initialState, action) {
+export function reducer(state = initialState, action) {
     switch(action.type) {
         case "DAMAGE_CHARACTER":
             if(action.payload.character === "monster"){
